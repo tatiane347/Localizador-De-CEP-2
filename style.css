@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fundo Vinho com Preto */
+    background: linear-gradient(45deg, #330000 0%, #000000 100%); /* Vinho escuro para preto */
+    color: #f0f0f0; /* Cor do texto geral */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente para o container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* Sombra avermelhada */
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ffcc00; /* Dourado/amarelo para o título */
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Para levar em conta o padding */
+    padding: 12px 10px;
+    border: 1px solid #660000; /* Borda vinho mais clara */
+    border-radius: 5px;
+    background-color: #220000; /* Fundo do input */
+    color: #f0f0f0;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: #884444;
+}
+
+input[type="text"]:focus {
+    border-color: #ffcc00; /* Borda dourada ao focar */
+}
+
+button {
+    background-color: #8B0000; /* Vinho mais vibrante */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #B22222; /* Vinho mais claro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+.resultado {
+    background-color: rgba(51, 0, 0, 0.5); /* Fundo mais claro para os resultados */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid rgba(255, 0, 0, 0.1);
+}
+
+.resultado p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.resultado strong {
+    color: #ffcc00; /* Dourado para os títulos dos campos */
+}
+
+.loading {
+    margin-top: 20px;
+    font-style: italic;
+    color: #ffcc00;
+}
+
+/* Responsividade Básica */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
